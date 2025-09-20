@@ -1,0 +1,12 @@
+class User {
+  String _username = "";
+
+  set username(String value) {
+    if (value.isNotEmpty) {
+      _username = value;
+    } else {
+      print("Username cannot be empty");
+    }
+  }
+  String get username => _username;
+}
